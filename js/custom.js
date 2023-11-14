@@ -7,7 +7,8 @@ $(function () {
     });
 
     $('.mainVisual .visual_slide').slick({
-        // arrows: false,
+        pauseOnHover: false,
+        autoplaySpeed: 2000,
     });
 
     $('.mainVisual .visual_slide').on('afterChange', function (e, s, c) {
