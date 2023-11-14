@@ -50,9 +50,37 @@
     color: #fff;
 }
 
+.mainVisual {
+    position: relative;
+}
+
 .mainVisual .visual_slide .itm {
+    position: relative;
     height: 100vh;
     min-height: 600px;
+}
+
+.mainVisual .visual_slide .itm .slogan p {
+    opacity: 0;
+    transform: translate(0, 100px);
+}
+
+.mainVisual .visual_slide .itm.on .slogan p {
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: 0.5s;
+}
+
+.mainVisual .visual_slide .itm .slogan span {
+    display: block;
+    opacity: 0;
+    transform: translate(0, 100px);
+}
+
+.mainVisual .visual_slide .itm.on .slogan span {
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: 0.5s 0.5s;
 }
 
 .mainVisual .visual_slide .itm01 {
@@ -61,6 +89,122 @@
 
 .mainVisual .visual_slide .itm02 {
     background: url(../images/mainVisual02.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .visual_slide .itm .slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.mainVisual .visual_slide .itm .slogan p {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 70px;
+    color: #fff;
+    margin: 0 0 19px 0;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.mainVisual .visual_slide .itm .slogan span {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.mainVisual .visual_slide .slick-arrow {
+    position: absolute;
+    top: 50%;
+    /* left: 50%; */
+    z-index: 999;
+    /* transform: translate(0, -50%); */
+
+    border: none;
+    background: transparent;
+
+    font-size: 0;
+
+    width: 40px;
+    height: 40px;
+    border-top: 4px solid rgba(255, 255, 255, 0.4);
+    border-left: 4px solid rgba(255, 255, 255, 0.4);
+}
+
+.mainVisual .visual_slide .slick-prev {
+    left: 80px;
+    transform: translate(0, -50%) rotate(-40deg);
+}
+
+.mainVisual .visual_slide .slick-next {
+    right: 80px;
+    transform: translate(0, -50%) rotate(135deg);
+}
+
+.mainVisual .right_dots {
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    margin: 0 0 0 585px;
+    transform: translate(-100%, 0);
+
+}
+
+.mainVisual .right_dots li {
+    text-align: right;
+    margin: 0 0 8px 0;
+}
+
+
+
+.mainVisual .right_dots li a {
+    font-size: 0;
+    color: #fff;
+}
+
+.mainVisual .right_dots li.on a {
+    font-size: 16px;
+}
+
+.mainVisual .right_dots li a::after {
+    content: "";
+    display: inline-block;
+    margin: 0 0 0 8px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #fff;
+    vertical-align: -2px;
+}
+
+.mainVisual .right_dots li.on a::after {
+    background: #fff;
+}
+
+.mainVisual .num {
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    margin: 0 0 0 -585px;
+    color: #fff;
+}
+
+.mainVisual .num span {
+    font-size: 40px;
+    font-weight: 500;
+
+}
+
+.mainVisual .play::after {
+    content: "\ea3e";
+    font-family: xeicon;
+}
+
+.mainVisual .play.on::after {
+    content: "\ea3b";
 }
 
 .mainContent .title h2 {
