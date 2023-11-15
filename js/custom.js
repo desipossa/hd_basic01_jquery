@@ -63,4 +63,11 @@ $(function () {
     });
 
 
+    $('.mainSolution .solution_slide').slick({
+        dots: true,
+        centerMode: true,
+        variableWidth: true,
+    })
+
+
 });
