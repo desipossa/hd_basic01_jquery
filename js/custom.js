@@ -40,8 +40,27 @@ $(function () {
 
         st = !st;
 
-    })
+    });
 
+    $('.mainPortfolio .pf_left_slide').slick({
+        arrows: false,
+        fade: true,
+        asNavFor: '.mainPortfolio .pf_right_slide',
+    });
+
+    $('.mainPortfolio .pf_right_slide').slick({
+        arrows: false,
+        slidesToShow: 4,
+        asNavFor: '.mainPortfolio .pf_left_slide',
+    });
+
+    $('.mainPortfolio .bt_left').on('click', function () {
+        $('.mainPortfolio .pf_left_slide').slick('slickPrev');
+    });
+
+    $('.mainPortfolio .bt_right').on('click', function () {
+        $('.mainPortfolio .pf_left_slide').slick('slickNext');
+    });
 
 
 });
