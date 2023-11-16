@@ -13,7 +13,7 @@ $(function () {
         const span = $('.slide .bg');
         span.each(function (idx, itm) {
             $(itm).css({
-                background: `url(../images/mainVisual01.jpg) no-repeat calc((-100vw / ${a.length} * ${idx})) center`
+                background: `url(./images/mainVisual01.jpg) no-repeat calc((-100vw / ${a.length} * ${idx})) center`
             }).animate({ width: '100%' })
         })
 
@@ -54,7 +54,7 @@ $(function () {
         const span = $('.slide .bg');
         span.each(function (idx, itm) {
             $(itm).css({
-                background: `url(../images/mainVisual0${c + 1}.jpg) no-repeat calc((-100vw / ${a.length} * ${idx})) center`
+                background: `url(./images/mainVisual0${c + 1}.jpg) no-repeat calc((-100vw / ${a.length} * ${idx})) center`
             }).animate({ width: '100%' })
         });
 

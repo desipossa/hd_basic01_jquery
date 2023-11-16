@@ -16,7 +16,7 @@ $(function () {
             $(itm).css({
                 width: '100%',
                 top: '100%',
-                background: `url(../images/mainVisual01.jpg) no-repeat calc((-100vw / ${a.length} * ${idx})) center`
+                background: `url(./images/mainVisual01.jpg) no-repeat calc((-100vw / ${a.length} * ${idx})) center`
             }).delay(100 * idx).animate({ top: 0 })
         })
 
@@ -52,14 +52,14 @@ $(function () {
             current.find('.slide').append('<div class="s"><span class="bg"></span></div>');
         }
 
-        const span = $('.slide .bg');
+        const span = $('.slick-current .slide .bg');
         span.each(function (idx, itm) {
             $(itm).css({
                 width: '100%',
                 top: '100%',
-                background: `url(../images/mainVisual01.jpg) no-repeat calc((-100vw / ${a.length} * ${idx})) center`
-            }).delay(100 * idx).animate({ top: 0 })
-        })
+                background: `url(./images/mainVisual0${c + 1}.jpg) no-repeat calc((-100vw / ${a.length} * ${idx})) center`
+            }).delay(100 * idx).animate({ width: '100%' })
+        });
 
         current.addClass('on').siblings().removeClass('on');
     });
