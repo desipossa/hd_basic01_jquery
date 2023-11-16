@@ -58,7 +58,7 @@ $(function () {
                 width: '100%',
                 top: '100%',
                 background: `url(./images/mainVisual0${c + 1}.jpg) no-repeat calc((-100vw / ${a.length} * ${idx})) center`
-            }).delay(100 * idx).animate({ width: '100%' })
+            }).delay(100 * idx).animate({ top: 0 })
         });
 
         current.addClass('on').siblings().removeClass('on');
