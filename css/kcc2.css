@@ -2,6 +2,11 @@
     outline: 1px solid tomato--;
 }
 
+.slick-track,
+.slick-slide {
+    transition-delay: 300ms;
+}
+
 .header {
     position: fixed;
     top: 0;
@@ -92,15 +97,15 @@
     flex: 1;
 }
 
-/* .mainVisual .visual_slide .itm01 .slide {
+.mainVisual .visual_slide .itm01 .slide {
     width: 100vw;
-    background: url(../images/mainVisual02.jpg) no-repeat 0 center;
+    background: url(../images/mainVisual01.jpg) no-repeat 0 center;
 }
 
 .mainVisual .visual_slide .itm02 .slide {
     width: 100vw;
-    background: url(../images/mainVisual01.jpg) no-repeat 0 center;
-} */
+    background: url(../images/mainVisual02.jpg) no-repeat 0 center;
+}
 
 
 
