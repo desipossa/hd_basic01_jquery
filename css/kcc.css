@@ -102,37 +102,7 @@
     background: url(../images/mainVisual01.jpg) no-repeat 0 center;
 }
 
-.mainVisual .visual_slide .itm01 .s:nth-child(1) span {
-    background: url(../images/mainVisual01.jpg) no-repeat 0 center;
-}
 
-.mainVisual .visual_slide .itm01 .s:nth-child(2) span {
-    background: url(../images/mainVisual01.jpg) no-repeat calc((-100vw / 4 * 1)) center;
-}
-
-.mainVisual .visual_slide .itm01 .s:nth-child(3) span {
-    background: url(../images/mainVisual01.jpg) no-repeat calc((-100vw / 4 * 2)) center;
-}
-
-.mainVisual .visual_slide .itm01 .s:nth-child(4) span {
-    background: url(../images/mainVisual01.jpg) no-repeat calc((-100vw / 4 * 3)) center;
-}
-
-.mainVisual .visual_slide .itm02 .s:nth-child(1) span {
-    background: url(../images/mainVisual02.jpg) no-repeat 0 center;
-}
-
-.mainVisual .visual_slide .itm02 .s:nth-child(2) span {
-    background: url(../images/mainVisual02.jpg) no-repeat calc((-100vw / 4 * 1)) center;
-}
-
-.mainVisual .visual_slide .itm02 .s:nth-child(3) span {
-    background: url(../images/mainVisual02.jpg) no-repeat calc((-100vw / 4 * 2)) center;
-}
-
-.mainVisual .visual_slide .itm02 .s:nth-child(4) span {
-    background: url(../images/mainVisual02.jpg) no-repeat calc((-100vw / 4 * 3)) center;
-}
 
 .mainVisual .visual_slide .itm span {
     position: absolute;

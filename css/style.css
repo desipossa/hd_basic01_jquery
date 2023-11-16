@@ -405,6 +405,12 @@
     color: #fff;
 }
 
+.mainSolution {
+    position: relative;
+    background: #f9f9f9;
+    padding: 100px 0 140px 0;
+}
+
 .mainSolution .solution_slide figure {
     max-width: 1200px;
     width: 100%;
@@ -511,4 +517,106 @@
 
 .mainSolution .solution_slide .slick-dots li button {
     display: none;
+}
+
+.mainSolution .solution_txt {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    margin: 0 0 0 -485px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.mainSolution .solution_txt::after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: -24px;
+    width: 48px;
+    height: 2px;
+    background: #008850;
+}
+
+.mainSolution .solution_txt .txt_box {
+    padding: 40px;
+}
+
+.mainSolution .solution_txt .txt_box li {
+    visibility: hidden;
+    height: 0;
+}
+
+.mainSolution .solution_txt .txt_box li h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+}
+
+.mainSolution .solution_txt .txt_box li p {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0 0 32px 0;
+    height: 120px;
+}
+
+.mainSolution .solution_txt .txt_box li.on {
+    visibility: visible;
+    height: auto;
+}
+
+.mainSolution .solution_idx {
+    position: absolute;
+    bottom: 140px;
+    left: 50%;
+    margin: 0 0 0 -445px;
+    font-size: 20px;
+}
+
+.mainSolution .solution_idx strong {
+    font-size: 32px;
+    font-weight: 600;
+    color: #008850;
+}
+
+.mainPromotion {
+    background: url(../images/mainPromotionBg.jpg) no-repeat left bottom;
+}
+
+.mainPromotion .title {
+    text-align: center;
+}
+
+.mainPromotion .movie_case {
+    width: 800px;
+    height: calc(800px * 9 / 16);
+    background: tomato;
+    margin: 0 auto;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.mainPromotion .movie_play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border: none;
+    background: transparent;
+    border: 4px solid #008850;
+    padding: 20px 22px;
+    font-size: 24px;
+    color: #008850;
+    border-radius: 50%;
+}
+
+.mainPromotion .movie_play::before {
+    content: "\ea3e";
+    font-family: xeicon;
+}
+
+.mainPromotion .movie_play.on::before {
+    content: "\ea3b";
 }
