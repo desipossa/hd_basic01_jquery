@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
+    <style>
+        .content {
+            display: flex;
+            /* align-items: flex-end; */
+            height: 500px;
+        }
+
+        .box {
+            background: tomato;
+            width: 200px;
+            clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+        }
+
+        .flex_container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .flex_container>* {
+            flex: 1 0 300px;
+            height: 100px;
+            background: tomato;
+        }
+
+        hr {
+            margin: 100px 0;
+        }
+
+        .grid_container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .grid_container>* {
+
+            min-height: 100px;
+            background: tomato;
+        }
+    </style>
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery.mb.YTPlayer.min.js"></script>
+</head>
+
+<body>
+
+    <section class="movie default">
+        <div class="title">
+            <h2>동영상잘라쓰기</h2>
+            <p>동영상을 잘라쓴다네... 어인 일이고... 머시기... </p>
+        </div>
+        <div class="inner content">
+            <div class="box box01">
+                <div id="movie01" class="player"></div>
+            </div>
+            <div class="box box02">
+                <div id="movie02" class="player"></div>
+            </div>
+            <div class="box box03">
+                <div id="movie03" class="player"></div>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="title">
+            <h2>플렉스box</h2>
+            <p>동영상을 잘라쓴다네... 어인 일이고... 머시기... </p>
+        </div>
+        <div class="inner flex_container">
+            <div class="flex_box"></div>
+            <div class="flex_box"></div>
+            <div class="flex_box"></div>
+            <div class="flex_box"></div>
+            <div class="flex_box"></div>
+        </div>
+
+        <hr />
+
+        <div class="title">
+            <h2>그리드box</h2>
+            <p>리액트 같은데서 숫자가 정해지지 않은 자료를 가져와야 할 때...</p>
+        </div>
+        <div class="inner grid_container">
+            <div class="flex_box"></div>
+            <div class="flex_box"></div>
+            <div class="flex_box"></div>
+            <div class="flex_box"></div>
+            <div class="flex_box"></div>
+        </div>
+    </section>
+
+    <script>
+        $(function () {
+            $('#movie01').YTPlayer({
+                videoURL: 'https://youtu.be/5nnsleIF6Yw',
+                containment: '.box01',
+            });
+            $('#movie02').YTPlayer({
+                videoURL: 'https://youtu.be/5nnsleIF6Yw',
+                containment: '.box02',
+            });
+            $('#movie03').YTPlayer({
+                videoURL: 'https://youtu.be/5nnsleIF6Yw',
+                containment: '.box03',
+            });
+        })
+    </script>
+</body>
+
+</html>
